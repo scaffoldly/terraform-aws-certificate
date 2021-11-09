@@ -1,5 +1,5 @@
 module "certificate" {
-  count = length(var.domains) ? 1 : 0
+  count = length(var.domains) > 0 ? 1 : 0
 
   source  = "scaffoldly/certificate-stage/aws"
   version = "1.0.1"
