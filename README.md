@@ -29,7 +29,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.3 |
+| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.4 |
 
 ## Resources
 
@@ -40,6 +40,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_domains"></a> [domains](#input\_domains) | The domains for which to create a certificate | `list(string)` | `[]` | no |
+| <a name="input_root_domain"></a> [root\_domain](#input\_root\_domain) | The root domain | `string` | n/a | yes |
 | <a name="input_stage"></a> [stage](#input\_stage) | The stage (e.g. live, nonlive) | `string` | n/a | yes |
 
 ## Outputs
