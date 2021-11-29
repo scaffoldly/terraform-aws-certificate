@@ -4,8 +4,9 @@ module "certificate" {
   source  = "scaffoldly/certificate-stage/aws"
   version = "1.0.2"
 
-  stage   = var.stage
-  domains = var.domains
+  stage       = var.stage
+  root_domain = var.root_domain
+  domains     = var.domains
 
   providers = {
     aws.dns = aws.dns
