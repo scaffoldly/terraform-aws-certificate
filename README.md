@@ -50,6 +50,7 @@ No resources.
 |------|-------------|
 | <a name="output_certificate_arn"></a> [certificate\_arn](#output\_certificate\_arn) | The certificate ARN |
 | <a name="output_domains"></a> [domains](#output\_domains) | List of all domains for the certificate |
+| <a name="output_root_domain"></a> [root\_domain](#output\_root\_domain) | Re-output of var.root\_domain |
 | <a name="output_stage"></a> [stage](#output\_stage) | Re-output of var.stage |
 | <a name="output_subdomain_suffix"></a> [subdomain\_suffix](#output\_subdomain\_suffix) | Re-output of var.subdomain\_suffix |
 <!-- END_TF_DOCS -->
