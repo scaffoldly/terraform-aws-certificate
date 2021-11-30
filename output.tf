@@ -12,3 +12,8 @@ output "domains" {
   value       = length(var.subdomains) > 0 ? flatten(module.certificate.*.domains) : []
   description = "List of all domains for the certificate"
 }
+
+output "subdomain_suffix" {
+  value       = var.subdomain_suffix
+  description = "Re-output of var.subdomain_suffix"
+}
