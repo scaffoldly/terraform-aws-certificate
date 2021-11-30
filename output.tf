@@ -13,6 +13,11 @@ output "domains" {
   description = "List of all domains for the certificate"
 }
 
+output "root_domain" {
+  value       = var.root_domain
+  description = "Re-output of var.root_domain"
+}
+
 output "subdomain_suffix" {
   value       = var.subdomain_suffix
   description = "Re-output of var.subdomain_suffix"
