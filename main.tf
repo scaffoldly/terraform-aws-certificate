@@ -2,7 +2,7 @@ module "certificate" {
   count = length(var.subdomains) > 0 ? 1 : 0
 
   source  = "scaffoldly/certificate-stage/aws"
-  version = "1.0.5"
+  version = "1.0.6"
 
   stage            = var.stage
   root_domain      = var.root_domain
