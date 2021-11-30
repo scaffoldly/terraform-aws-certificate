@@ -4,11 +4,11 @@ output "stage" {
 }
 
 output "certificate_arn" {
-  value       = length(var.domains) > 0 ? join("", module.certificate.*.certificate_arn) : null
+  value       = length(var.subdomains) > 0 ? join("", module.certificate.*.certificate_arn) : null
   description = "The certificate ARN"
 }
 
 output "domains" {
-  value       = var.domains
-  description = "Re-output of var.domains"
+  value       = length(var.subdomains) > 0 ? flatten(module.certificate.*.domains) : []
+  description = "List of all domains for the certificate"
 }
