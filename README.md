@@ -29,7 +29,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.4 |
+| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.5 |
 
 ## Resources
 
@@ -39,15 +39,16 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_domains"></a> [domains](#input\_domains) | The domains for which to create a certificate | `list(string)` | `[]` | no |
 | <a name="input_root_domain"></a> [root\_domain](#input\_root\_domain) | The root domain | `string` | n/a | yes |
 | <a name="input_stage"></a> [stage](#input\_stage) | The stage (e.g. live, nonlive) | `string` | n/a | yes |
+| <a name="input_subdomain_suffix"></a> [subdomain\_suffix](#input\_subdomain\_suffix) | The (optional) suffix to append to each subdomain | `string` | `""` | no |
+| <a name="input_subdomains"></a> [subdomains](#input\_subdomains) | The subdomains for which to create a certificate on var.root\_domain | `list(string)` | `[]` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | <a name="output_certificate_arn"></a> [certificate\_arn](#output\_certificate\_arn) | The certificate ARN |
-| <a name="output_domains"></a> [domains](#output\_domains) | Re-output of var.domains |
+| <a name="output_domains"></a> [domains](#output\_domains) | List of all domains for the certificate |
 | <a name="output_stage"></a> [stage](#output\_stage) | Re-output of var.stage |
 <!-- END_TF_DOCS -->
