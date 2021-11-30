@@ -29,7 +29,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.5 |
+| <a name="module_certificate"></a> [certificate](#module\_certificate) | scaffoldly/certificate-stage/aws | 1.0.6 |
 
 ## Resources
 
